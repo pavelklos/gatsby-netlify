@@ -1,0 +1,26 @@
+html {
+  /* background-color: cornsilk !important; */
+}
+body {
+  min-height: 100vh;
+  position: relative;
+  margin: 0;
+  padding-bottom: 60px;
+}
+.container {
+  border: 2px solid red;
+  /* margin: 2px; */
+}
+form {
+  border: 2px solid blue;
+}
+.card {
+  border: 2px solid mediumseagreen !important;
+  background-color: honeydew !important;
+}
+.card-title {
+  color: mediumseagreen;
+}
+nav, footer {
+  border: 2px solid black !important;
+}
