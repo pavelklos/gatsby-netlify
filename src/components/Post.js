@@ -11,9 +11,13 @@ const Post = (props) => (
         <Card.Img variant="top" src={props.src} width="700" alt={props.alt || "default"} />
         <Card.Body>
           {/* <Card.Title>{props.title}</Card.Title> */}
+
           <Card.Title dangerouslySetInnerHTML={{ __html: props.title }} />
           {/* <Card.Text>{props.excerpt}</Card.Text> */}
-          <Card.Text dangerouslySetInnerHTML={{ __html: props.excerpt }} />
+          <Card.Text>
+            <div dangerouslySetInnerHTML={{ __html: props.excerpt }} />
+          </Card.Text>
+          {/* <Card.Text dangerouslySetInnerHTML={{ __html: props.excerpt }} /> */}
           {/* <Button variant="primary" href={props.readMore}>Read More...</Button> */}
           <Button variant="warning" as={Link} to={props.readMore}>Read More...</Button>
           {/* <button onClick={() => navigate("/")}> */}
