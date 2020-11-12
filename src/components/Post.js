@@ -14,7 +14,7 @@ const Post = (props) => (
         {/* <Card.Text>{props.excerpt}</Card.Text> */}
         <Card.Text dangerouslySetInnerHTML={{ __html: props.excerpt }} />
         {/* <Button variant="primary" href={props.readMore}>Read More...</Button> */}
-        <Button variant="primary" as={Link} to={props.readMore}>Read More...</Button>
+        <Button variant="warning" as={Link} to={props.readMore}>Read More...</Button>
         {/* <button onClick={() => navigate("/")}> */}
       </Card.Body>
     </Card >

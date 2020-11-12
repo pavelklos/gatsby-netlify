@@ -13,10 +13,11 @@ export default (props) => (
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="mr-auto">
-        <Nav.Link as={Link} to="/">Home</Nav.Link>
-        <Nav.Link as={Link} to="/about/">About</Nav.Link>
-        <Nav.Link as={Link} to="/contact/">Contact Us</Nav.Link>
-        <Nav.Link as={Link} to="/test/">Test</Nav.Link>
+        <Nav.Link as={Link} to="/"><b className="text-dark">Home</b></Nav.Link>
+        <Nav.Link as={Link} to="/about/"><b className="text-dark">About</b></Nav.Link>
+        <Nav.Link as={Link} to="/contact/"><b className="text-dark">Contact Us</b></Nav.Link>
+        <Nav.Link as={Link} to="/test/"><b className="text-dark">Test</b></Nav.Link>
+
         {/* <Nav.Link href="#home">Home</Nav.Link>
         <Nav.Link href="#link">Link</Nav.Link> */}
         {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">

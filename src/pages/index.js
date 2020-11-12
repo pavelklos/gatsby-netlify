@@ -54,7 +54,7 @@ export default ({ data }) => { // props.data from graphql
         title="This is our second post"
         excerpt="We are writing something to be displayed in our excerpt"
         readMore='#'
-      />'
+      />
       {/* This is where our content will go! */}
       {/* <h1>First Gatsby Project</h1> */}
       {/* <a href="http://google.com">Go to Google</a> */}
