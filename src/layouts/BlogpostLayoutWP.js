@@ -17,18 +17,20 @@ const BlogpostLayoutWP = ({ data }) => { // props.data
 
       />
       <Header />
-      <div className="container">
-        <div className="row justify-content-md-center">
-          {/* <div>Hello, this is a blogpost page!</div> */}
-          <h1 dangerouslySetInnerHTML={{ __html: post.title }} />
-          <div dangerouslySetInnerHTML={{ __html: post.content }} />
-          {/* <div className={props.column}>
+      <main>
+        <div className="container">
+          <div className="row justify-content-md-center">
+            {/* <div>Hello, this is a blogpost page!</div> */}
+            <h1 dangerouslySetInnerHTML={{ __html: post.title }} />
+            <div dangerouslySetInnerHTML={{ __html: post.content }} />
+            {/* <div className={props.column}>
             <div className="pt-3">
               {props.children}
             </div>
           </div> */}
+          </div>
         </div>
-      </div>
+      </main>
       <Footer />
     </div>
   )

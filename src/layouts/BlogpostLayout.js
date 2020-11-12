@@ -10,18 +10,20 @@ const BlogpostLayout = ({ data }) => { // props.data
     <div>
       <SEO />
       <Header />
-      <div className="container">
-        <div className="row justify-content-md-center">
-          {/* <div>Hello, this is a blogpost page!</div> */}
-          <h1>{post.frontmatter.title}</h1>
-          <div dangerouslySetInnerHTML={{ __html: post.html }} />
-          {/* <div className={props.column}>
+      <main>
+        <div className="container">
+          <div className="row justify-content-md-center">
+            {/* <div>Hello, this is a blogpost page!</div> */}
+            <h1>{post.frontmatter.title}</h1>
+            <div dangerouslySetInnerHTML={{ __html: post.html }} />
+            {/* <div className={props.column}>
             <div className="pt-3">
               {props.children}
             </div>
           </div> */}
+          </div>
         </div>
-      </div>
+      </main>
       <Footer />
     </div>
   )

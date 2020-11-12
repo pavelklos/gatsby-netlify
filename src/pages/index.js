@@ -19,6 +19,7 @@ export default ({ data }) => { // props.data from graphql
       <h1>[WP = WordpressPost]</h1>
       {data.allWordpressPost.nodes.map(node => (
         <Post
+          alt={node.featured_media.slug}
           key={node.slug}
           src={node.featured_media.source_url}
           title={node.title}
@@ -32,6 +33,7 @@ export default ({ data }) => { // props.data from graphql
       <h1>[MD = MarkdownRemark]</h1>
       {data.allMarkdownRemark.nodes.map(node => (
         <Post
+          alt={node.frontmatter.title}
           key={node.fields.slug}
           src={node.frontmatter.image}
           title={node.frontmatter.title}
@@ -44,12 +46,14 @@ export default ({ data }) => { // props.data from graphql
       {/* [STATIC FOLDER] */}
       <h1>[STATIC FOLDER]</h1>
       <Post
+        alt="This is our first post"
         src="gatsby.png"
         title="This is our first post"
         excerpt="We are writing something to be displayed in our excerpt"
         readMore='#'
       />
       <Post
+        alt="This is our second post"
         src="gatsby.jpg"
         title="This is our second post"
         excerpt="We are writing something to be displayed in our excerpt"
@@ -75,6 +79,7 @@ export const query = graphql`
       excerpt
       featured_media {
         source_url
+        slug
       }
     }
   }
